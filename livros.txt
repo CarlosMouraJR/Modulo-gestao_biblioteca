@@ -1,5 +1,3 @@
-Title;Author;Edition
-
 Java How To Program Deitel & Deitel 2007 
 Patterns of Enterprise Application Architecture Martin Fowler 2002 
 Head First Design Patterns Elisabeth Freeman 2004 
