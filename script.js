@@ -1,3 +1,6 @@
+OrderingException.prototype = Object.create(Error.prototype);
+var g_URL = "/Biblioteca_Digital/";
+
 function principal(){
 	var arquivo;
 	var todosOsLivros;
@@ -14,6 +17,17 @@ function principal(){
 	    alert(e);
 
 	}
+
+	if(arquivo != "" && arquivo != undefined){
+		todosOsLivros = arquivo[0];
+		ordenacao     = arquivo[1];
+
+		livrosOrdenados = servico_Ordenacao(todosOsLivros, ordenacao);
+
+		html = construir_HTML(livrosOrdenados);
+		mostra_HTML("vitrineLivros", html);
+	}
+
 }
 
 function ler_Arquivo(){
