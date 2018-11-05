@@ -318,3 +318,12 @@ function mostra_HTML(local, html){
 	document.getElementById(local).innerHTML = html;
 
 }
+
+function OrderingException(message) {
+
+	const error = new Error(message);
+	console.error(message);
+
+	return error;
+
+}
