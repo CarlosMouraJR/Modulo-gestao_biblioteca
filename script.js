@@ -1,8 +1,9 @@
 OrderingException.prototype = Object.create(Error.prototype);
-var g_URL = "/Biblioteca_Digital/";
+var g_URL = "/Modulo-gestao_biblioteca/";
 
 function principal(){
 	var arquivo;
+	var nomesAtributos;
 	var todosOsLivros;
 	var ordenacao;
 	var livrosOrdenados;
@@ -19,12 +20,13 @@ function principal(){
 	}
 
 	if(arquivo != "" && arquivo != undefined){
-		todosOsLivros = arquivo[0];
-		ordenacao     = arquivo[1];
+		nomesAtributos = arquivo[0];
+		todosOsLivros  = arquivo[1];
+		ordenacao      = arquivo[2];
 
 		livrosOrdenados = servico_Ordenacao(todosOsLivros, ordenacao);
 
-		html = construir_HTML(livrosOrdenados);
+		html = construir_HTML(nomesAtributos, livrosOrdenados);
 		mostra_HTML("vitrineLivros", html);
 	}
 
@@ -62,7 +64,7 @@ function ler_Arquivo(){
 
 		}
 
-		resultado = [livrosTratados, ordenacao];
+		resultado = [nomesAtributos, livrosTratados, ordenacao];
 
 	}
 
@@ -290,17 +292,16 @@ function algoritmo_ordenacao(a, b, atributo, direcao){
 	}
 }
 
-function construir_HTML(livros){
+function construir_HTML(nomesAtributos, livros){
 	var html = "";
-	var atributos = Object.keys(livros[0]);
 
 	html += "<table border='1px' width='600px'>";
 	html += "<tr>";
 
-	for(var i = 0; i < atributos.length; i++){
+	for(var i = 0; i < nomesAtributos.length; i++){
 
 		html += "<th>";
-		html += atributos[i];
+		html += nomesAtributos[i];
 		html += "</th>";
 
 	}
@@ -311,10 +312,10 @@ function construir_HTML(livros){
 
 		html += "<tr>";
 
-		for(var k = 0; k < atributos.length; k++){
+		for(var k = 0; k < nomesAtributos.length; k++){
 
 			html += "<td>";
-			html += livros[j][atributos[k]];
+			html += livros[j][nomesAtributos[k]];
 			html += "</td>";
 		}
 		
