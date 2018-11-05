@@ -57,8 +57,9 @@ Author;Ascendente|?|Title;Descendente
 ```
 
 Neste exemplo, vai ocorrer duas ordenações:
-| #   | Ordenãção requisitada   	| Execução                                          
-| --- | --------------------------- | ----------
+
+| #   | Ordenação requisitada   	| Execução                                          
+| --- | --------------------------- | ----------------------------------------------------------
 | 1   | Author;Ascendente   		| O algoritmo vai ordenar TODOS os livros de forma ascendente (ou seja, do menor para o maior em ordem alfabética).
 | 2   | Title;Descendente			| O algoritmo vai verificar se existiu uma ordenação anterior a esta (neste caso, SIM) então vai pegar o atributo anterior ordenado (neste caso, Author) e vai comparar TODOS os livros. Apernas os livros com 'Author' iguais vão sofrer uma ordenação de 'Title', de forma descendente (ou seja, do maior para o menor em ordem alfabética).
 
