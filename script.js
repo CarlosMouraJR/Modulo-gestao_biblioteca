@@ -275,3 +275,40 @@ function algoritmo_ordenacao(a, b, atributo, direcao){
 
 	}
 }
+
+function construir_HTML(livros){
+	var html = "";
+	var atributos = Object.keys(livros[0]);
+
+	html += "<table border='1px' width='600px'>";
+	html += "<tr>";
+
+	for(var i = 0; i < atributos.length; i++){
+
+		html += "<th>";
+		html += atributos[i];
+		html += "</th>";
+
+	}
+
+	html += "</tr>";
+
+	for(var j = 0; j < livros.length; j++){
+
+		html += "<tr>";
+
+		for(var k = 0; k < atributos.length; k++){
+
+			html += "<td>";
+			html += livros[j][atributos[k]];
+			html += "</td>";
+		}
+		
+		html += "</tr>";
+
+	}
+
+	html += "</table>";
+
+	return html;
+}
