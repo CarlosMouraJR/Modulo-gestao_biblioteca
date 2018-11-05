@@ -16,16 +16,18 @@ Todas as regras do módulo é executada em um arquivo chamado script.js.
 ## Como usar o módulo
 É necessario preencher o arquivo de texto 'livros.txt' com a seguinte estrutura:
 
-| Atributos utilizados pelos livros [Cada atributo deverá ser separado por ;]			                           
-| ***   			
-| Livros [Conteúdos dos atributos separados por ;][Livros separados por |?|]
-| $$$  
-| Ordenação vertical desejada [orientação e direção separadas por ;][Ordenações separadas por |?|]
+```
+Atributos utilizados pelos livros [Cada atributo deverá ser separado por ;]			                           
+***   			
+Livros [Conteúdos dos atributos separados por ;][Livros separados por |?|]
+$$$  
+Ordenação vertical desejada [orientação e direção separadas por ;][Ordenações separadas por |?|]
+```
 
 ### Exemplo:
 ```
 Title;Author;Edition			                           
- ***   			
+***   			
 Java How To Program;Deitel & Deitel;2007|?|
 Patterns of Enterprise Application Architecture;Martin Fowler;2002|?|
 Head First Design Patterns;Elisabeth Freeman;2004|?|
