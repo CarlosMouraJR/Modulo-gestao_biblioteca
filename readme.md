@@ -5,7 +5,7 @@ Esta é um pequeno módulo de um pequeno sistema de gestão de biblioteca. Este 
 Este módulo faz parte de um sistema maior. Sua função é receber uma lista de atributos que serão utilizados nos livros, uma lista de livros com seus respectivos atributos e uma ou mais regras de ordenação. O módulo se encarregará de executar as instuções necessárias, e irá mostrar na tela, utilizando HTML, a listagem de livros na ordem configurada.
 
 ## Como usar
-Você precisa configurar o arquivo de texto 'livros.txt' de acordo com a estrutura esperada.
+Você precisa configurar a variavel que contêm o caminho para a pasta do projeto e alterar o arquivo de texto 'livros.txt' de acordo com a estrutura pré-definida e desejada.
 
 ### 1 - Atributos
 O módulo permite inserir quaisquer atributos, com quaisquer nomes e em qualquer quantidade (Autor, Edição, Título, Tipo de capa, Ano de lançamento e etc). O importante é respeitar a regra que se definir 5 atributos, cada livro deverá ter 5 atributos (vinculo realizado pela ordem dos atributos declarados e conteúdos utilizados). Cada atributo deve ser separado por ponto e vírgula ; e devem estar declarados antes do quebra-texto representado por 3 asteriscos juntos . Exemplo:
