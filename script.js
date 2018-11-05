@@ -165,3 +165,31 @@ function verifica_Ordenacao(ordenacao, nomesAtributos){
 
 	return resultado;
 }
+
+function requisicao_Arquivo(caminho){
+    var arquivo = new XMLHttpRequest();
+    var resultado;
+
+    arquivo.open("GET", caminho, false);
+    arquivo.setRequestHeader("Cache-Control", "no-cache");
+    arquivo.onload = function (e) {
+
+		if (arquivo.readyState == XMLHttpRequest.DONE) {
+
+		  	if (arquivo.status == 200) {
+
+		  		resultado = arquivo.responseText;
+
+			}else{
+
+				alert("Erro: \n"+arquivo.statusText);
+				resultado = false;
+
+			}
+
+		}
+	};
+
+	arquivo.send();
+	return resultado;
+}
