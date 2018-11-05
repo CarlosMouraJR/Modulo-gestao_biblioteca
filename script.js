@@ -229,3 +229,49 @@ function realiza_ordenacao(livros, atributo, atributoAnterior, direcao){
 
 	return livros;
 }
+
+function algoritmo_ordenacao(a, b, atributo, direcao){
+	if(isNaN(a[atributo] - b[atributo])){
+
+		if (a[atributo] < b[atributo]) {
+			if(direcao == "Ascendente"){
+
+				return -1;
+
+			}else{
+
+				return 1;
+
+			}
+		}
+
+		if (a[atributo] > b[atributo]) {
+
+			if(direcao == "Ascendente"){
+
+				return 1;
+
+			}else{
+
+				return -1;
+				
+			}
+
+		}
+
+		return 0;
+
+	}else{
+
+		if(direcao == "Ascendente"){
+
+			return a[atributo] - b[atributo];
+
+		}else{
+
+			return b[atributo] - a[atributo];
+			
+		}
+
+	}
+}
