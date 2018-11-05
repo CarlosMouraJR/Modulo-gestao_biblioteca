@@ -210,3 +210,22 @@ function servico_Ordenacao(livros, ordenacao){
 
 	return livros;
 }
+
+function realiza_ordenacao(livros, atributo, atributoAnterior, direcao){
+
+	livros.sort(function(a, b) {
+
+		if(atributoAnterior == ""){
+
+			return algoritmo_ordenacao(a, b, atributo, direcao);
+
+		} else if(a[atributoAnterior] == b[atributoAnterior]) {
+
+			return algoritmo_ordenacao(a, b, atributo, direcao);
+
+		}
+
+	});
+
+	return livros;
+}
