@@ -17,11 +17,11 @@ Todas as regras do módulo são executadas em um arquivo chamado script.js.
 É necessário preencher o arquivo de texto 'livros.txt' com a seguinte estrutura:
 
 ```
-Atributos utilizados pelos livros [Cada atributo deverá ser separado por ;]			                           
-***   			
-Livros [Conteúdos dos atributos separados por ;][Livros separados por |?|]
-$$$  
-Ordenação vertical desejada [orientação e direção separadas por ;][Ordenações separadas por |?|]
+Atributos utilizados pelos livros ([)Cada atributo deverá ser separado por ;)		                           
+***
+Livros (Os conteúdos dos atributos devem ser separados por ;) (Os livros devem ser separados por |?|)
+$$$
+Ordenação vertical desejada (A orientação e direção devem separadas por ;) (As ordenações devem separadas por |?|)
 ```
 
 ### Exemplo:
@@ -35,6 +35,11 @@ Internet & World Wide Web: How to Program;Deitel & Deitel;2007|?|
 $$$  
 Author;Ascendente|?|Title;Descendente
 ```
+
+### Observações:
+Você pode inserir quaisquer tipo de atributos e em qualquer quantidade (Autor, Edição, Título, Tipo de capa, Ano de lançamento e etc), porem deve respeitar a regra de x => x, ou seja, se definir 5 atributos, cada livro deverá ter os 5 atributos.
+
+Você pode colocar quantas ordenações quiser!
 
 ## Como funciona
 
@@ -60,7 +65,7 @@ Neste exemplo, vai ocorrer duas ordenações:
 
 | #   | Ordenação requisitada   	| Execução                                          
 | --- | --------------------------- | ----------------------------------------------------------
-| 1   | Author;Ascendente   		| O algoritmo vai ordenar TODOS os livros de forma ascendente (ou seja, do menor para o maior em ordem alfabética).
+| 1   | Author;Ascendente   		| O algoritmo vai ordenar TODOS os livros de forma ascendente de acordo com o atributo 'Author' (ou seja, do menor para o maior em ordem alfabética).
 | 2   | Title;Descendente			| O algoritmo vai verificar se existiu uma ordenação anterior a esta (neste caso, SIM) então vai pegar o atributo anterior ordenado (neste caso, Author) e vai comparar TODOS os livros. Apernas os livros com 'Author' iguais vão sofrer uma ordenação de 'Title', de forma descendente (ou seja, do maior para o menor em ordem alfabética).
 
 ### E os números, como ficam?
