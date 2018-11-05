@@ -111,3 +111,57 @@ function verifica_Arquivo(arquivo){
 
 	}
 }
+
+function verifica_Ordenacao(ordenacao, nomesAtributos){
+	var resultado = true;
+	var encontrou = false;
+	var atributoOrdenado;
+	var direcaoOrdenacao;
+
+	for(var i = 0; i < ordenacao.length; i++){
+
+		ordenacao[i] = ordenacao[i].split(";");
+
+		if(ordenacao[i].length == 2){
+
+			atributoOrdenado = ordenacao[i][0];
+			direcaoOrdenacao = ordenacao[i][1];
+
+			if(direcaoOrdenacao == "Ascendente" || direcaoOrdenacao == "Descendente"){
+
+				for(var j = 0; j < nomesAtributos.length; j++){
+
+					if(atributoOrdenado == nomesAtributos[j]){
+
+						j = nomesAtributos.length;
+						encontrou = true;
+
+					} else if( j == nomesAtributos.length - 1 && encontrou == false ) {
+
+						resultado = "O arquivo contém erros de configuração de ordenação!\nErro encontrando na palavra: " + ordenacao[i];
+						i = ordenacao.length;
+						
+					}
+
+				}
+
+			} else {
+
+				resultado = "O arquivo contém erros de configuração de ordenação!\nErro encontrando na direção utilizada: " +direcaoOrdenacao;
+				i = ordenacao.length;
+
+			}
+
+		} else {
+
+			resultado = "O arquivo contém erros de configuração de ordenação!\nA configuração deve ser realizada da seguinte forma:\nAtributo_a_ser_ordenado;Direção_ordenação";
+			i = ordenacao.length;
+
+		}
+		
+		encontrou = false;
+
+	}
+
+	return resultado;
+}
