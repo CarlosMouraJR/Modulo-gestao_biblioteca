@@ -91,7 +91,7 @@ O arquivo de texto contém os atributos a serem utilizados, os livros com seus r
 Todas as regras do módulo são executadas em um arquivo chamado script.js.
 
 
-## Parte técnica do módulo
+## Descrição das funções que compõem o módulo
 
 Existe uma sequência de funções principais sendo chamadas e executando instruções:
 
