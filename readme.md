@@ -2,7 +2,7 @@
 Esta é um pequeno módulo de um pequeno sistema de gestão de biblioteca. Este módulo se restringe a receber livros, organiza-los e mostra-los em uma vitrine.
 
 ## Razão de existir
-Este módulo faz parte de um sistema maior. Sua função é receber uma lista de atributos que serão utilizados nos livros, uma lista de livros com seus respectivos atributos e uma ou mais regras de ordenação. O módulo se encarregará de executar as instuções necessárias, e irá mostrar na tela, utilizando HTML, a listagem de livros na ordem configurada.
+Este módulo faz parte de um sistema maior. Sua função é receber uma lista de atributos que serão utilizados nos livros, uma lista de livros com seus respectivos atributos e com uma ou mais regras de ordenação. O módulo se encarregará de executar as instruções necessárias e irá mostrar na tela, utilizando HTML, a listagem de livros na ordem configurada.
 
 ## Como usar
 Você precisa configurar a variavel que contêm o caminho para a pasta do projeto e alterar o arquivo de texto 'livros.txt' de acordo com a estrutura pré-definida e desejada.
