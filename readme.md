@@ -58,7 +58,7 @@ $$$
 Author;Ascendente|?|Title;Descendente
 ```
 
-#### 3.3 Ordenação com elementos númericos
+#### 3.3 - Ordenação com elementos númericos
 Todo elemento que contenha SOMENTE NÚMEROS será tratado de forma diferente, sendo usado a ordem numérica (0, 1, 2 e etc).
 Caso seja um elemento que contenha letras e números, será tratado como texto e sofrerá ordenação de acordo com o dicionário nativo do javascript (lexicographically).
 
