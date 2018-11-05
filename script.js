@@ -312,3 +312,9 @@ function construir_HTML(livros){
 
 	return html;
 }
+
+function mostra_HTML(local, html){
+
+	document.getElementById(local).innerHTML = html;
+
+}
