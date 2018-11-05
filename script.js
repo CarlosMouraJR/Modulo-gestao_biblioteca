@@ -193,3 +193,20 @@ function requisicao_Arquivo(caminho){
 	arquivo.send();
 	return resultado;
 }
+
+function servico_Ordenacao(livros, ordenacao){
+	var atributo;
+	var direcao;
+	var atributoAnterior;
+
+	for(var i = 0; i < ordenacao.length; i++){
+
+		atributo 		 = ordenacao[i][0];
+		direcao  		 = ordenacao[i][1];
+		livros   		 = realiza_ordenacao(livros, atributo, atributoAnterior, direcao);
+		atributoAnterior = atributo;
+
+	}
+
+	return livros;
+}
