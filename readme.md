@@ -69,7 +69,8 @@ Caso seja um elemento que contenha letras e números, será tratado como texto e
 
 | Nome da tecnologia | Versão                                          
 | -----------------  | ----------
-| Javacript  		 | Atual, puro                            
+| ECMAScript  		 | 5.1   
+| Javacript  		 | Puro                            
 | HTML   			 | 5   
 
 ## Suporte
