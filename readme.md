@@ -79,7 +79,7 @@ Caso seja um elemento que contenha letras e números, será tratado como texto e
 | -----------------  | ----------
 | Chrome  		 	 | 70.0.3538.77
 
-## Estrutura
+## Arquivos
 
 | Nome do Arquivo   | Extensão                                          
 | ----------------- | ----------
@@ -92,7 +92,7 @@ O arquivo de texto contém os atributos a serem utilizados, os livros com seus r
 Todas as regras do módulo são executadas em um arquivo chamado script.js.
 
 
-## Descrição das funções que compõem o módulo
+## Funções que compõem o módulo
 
 Existe uma sequência de funções principais sendo chamadas e executando instruções:
 
